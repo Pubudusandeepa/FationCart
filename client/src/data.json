@@ -1,0 +1,52 @@
+{
+    "products":[
+        {
+            "_id": "dress1",
+            "image":"/images/dress1.jpg",
+            "title": "Midi sundress with shirring detail",
+            "description": "This is for all the latest trends, No Metter",
+            "availableSizes": ["X", "L", "XL", "XXL"],
+            "price": 69.0
+        },
+        {
+            "_id": "dress2",
+            "image":"/images/dress2.jpg",
+            "title": "Midi sundress with shirring detail",
+            "description": "This is for all the latest trends, No Metter",
+            "availableSizes": ["M","X",  "XXL"],
+            "price": 59.0
+        },
+        {
+            "_id": "dress3",
+            "image":"/images/dress3.jpg",
+            "title": "Midi sundress with shirring detail",
+            "description": "This is for all the latest trends, No Metter",
+            "availableSizes": ["S","X",  "XL", "XXL"],
+            "price": 29.0
+        },
+        {
+            "_id": "dress4",
+            "image":"/images/dress4.jpg",
+            "title": "Midi sundress with shirring detail",
+            "description": "This is for all the latest trends, No Metter",
+            "availableSizes": ["XS","X", "L", "XL"],
+            "price": 49.0
+        },
+        {
+            "_id": "dress5",
+            "image":"/images/dress5.jpg",
+            "title": "Midi sundress with shirring detail",
+            "description": "This is for all the latest trends, No Metter",
+            "availableSizes": ["X", "L", "XL", "XXL"],
+            "price": 39.0
+        },
+        {
+            "_id": "dress6",
+            "image":"/images/dress6.jpg",
+            "title": "Midi sundress with shirring detail",
+            "description": "This is for all the latest trends, No Metter",
+            "availableSizes": ["X",  "XL", "XXL"],
+            "price": 19.0
+        }
+    ]
+}
