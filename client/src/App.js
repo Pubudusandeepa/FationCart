@@ -22,33 +22,33 @@ class App extends React.Component {
      alert("Need to save for  " + order.name);
   }
 
-  removeFromCart = (product) => {
+  // removeFromCart = (product) => {
     
-    const cartItems = this.state.cartItems.slice()
-    this.setState({
-      cartItems: cartItems.filter(x => x._id !== product._id)
-    })
-    //update cart
-    localStorage.setItem("cartItems", JSON.stringify(cartItems.filter(x => x._id !== product._id)))
+  //   const cartItems = this.state.cartItems.slice()
+  //   this.setState({
+  //     cartItems: cartItems.filter(x => x._id !== product._id)
+  //   })
+  //   //update cart
+  //   localStorage.setItem("cartItems", JSON.stringify(cartItems.filter(x => x._id !== product._id)))
     
-  }
+  // }
 
-  addToCart = (product) => {
-    const cartItems = this.state.cartItems.slice();
-    let alreadyInCart = false;
+  // addToCart = (product) => {
+  //   const cartItems = this.state.cartItems.slice();
+  //   let alreadyInCart = false;
 
-    cartItems.forEach((item) => {
-      if(item._id === product._id) {
-        item.count++;
-        alreadyInCart = true;
-      }
-    });
-    if(!alreadyInCart) {
-      cartItems.push({...product, count: 1})
-    }
-    this.setState({cartItems})
-    localStorage.setItem("cartItems", JSON.stringify(cartItems))
-  }
+  //   cartItems.forEach((item) => {
+  //     if(item._id === product._id) {
+  //       item.count++;
+  //       alreadyInCart = true;
+  //     }
+  //   });
+  //   if(!alreadyInCart) {
+  //     cartItems.push({...product, count: 1})
+  //   }
+  //   this.setState({cartItems})
+  //   localStorage.setItem("cartItems", JSON.stringify(cartItems))
+  // }
 
 
   
@@ -69,9 +69,7 @@ class App extends React.Component {
              </div>
              <div className="sidebar">
                 <Cart 
-                cartItems={this.state.cartItems} 
-                removeFromCart={this.removeFromCart}
-                createOrder={this.createOrder}
+             
                 />
              </div>
            </div> 
